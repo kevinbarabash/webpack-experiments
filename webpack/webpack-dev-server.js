@@ -24,5 +24,5 @@ const devServerConfig = {
  */
 const server = new WebpackDevServer(webpack(webpackConfig(env)), devServerConfig);
 
-// will be live at http://localhost:3000/
-server.listen(3000, 'localhost');
+// will be live at http://localhost:1234/
+server.listen(1234, 'localhost');
