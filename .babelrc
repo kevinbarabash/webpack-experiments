@@ -1,3 +1,7 @@
 {
-    "presets": ["latest", "react"]
+    "presets": ["latest", "react"],
+    "plugins": [
+        "syntax-dynamic-import",
+        "transform-class-properties"
+    ]
 }
