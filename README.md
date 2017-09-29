@@ -11,3 +11,11 @@ npm start
 ```
 
 Open `localhost:1234`.  Watch the network tab as you navigate between the pages.
+
+## Bundle Analysis
+
+```
+npm run build
+```
+
+`build/report.html` will open in a new browser tab.

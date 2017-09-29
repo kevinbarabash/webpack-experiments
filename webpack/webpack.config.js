@@ -1,4 +1,5 @@
 const webpack = require('webpack');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 // remember we installed this at the beginning? Now we're using it.
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
@@ -49,6 +50,10 @@ module.exports = env => {
         template: path.join(__dirname, '../src/index.html'),
         filename: 'index.html',
         inject: 'body',
+      }),
+
+      new BundleAnalyzerPlugin({
+        analyzerMode: 'static'
       }),
     ],
   };
